@@ -37,7 +37,7 @@ export default function App() {
           <Route path="*" element={<p className="center muted">Page not found.</p>} />
         </Routes>
       </main>
-      <footer className="footer">© {new Date().getFullYear()} CineStore · Crafted with MERN</footer>
+      <footer className="footer">© {new Date().getFullYear()} Zudioo Store </footer>
     </>
   );
 }
