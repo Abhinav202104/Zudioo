@@ -1,5 +1,5 @@
 export const inr = (n) => '₹' + Number(n).toLocaleString('en-IN');
-const BASE = import.meta.env.VITE_API_URL || '/api';
+const BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '') + '/api';
 export async function api(path, { method = 'GET', body } = {}) {
   const user = JSON.parse(localStorage.getItem('cs_user') || 'null');
   const res = await fetch(BASE + path, {
